@@ -1,9 +1,9 @@
 # IdhServer
 
-_```Proyecto Web :D```_
+_**Proyecto Web :D**_
 
 ## Comenzando 🚀
 
-_Empezar instalación._
+_```Empezar instalación```._
 
 
