@@ -10,25 +10,22 @@
       <meta name="copyright" content="Rod S.A.">
       <meta name="robots" content="noindex">
       <meta name="robots" content="nofollows">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="Normalize/normalize.css">
       <link rel="shortcut icon" href="Iconoseimg/himg.jpg" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="index.css">
     </head>
 <body>
     <header>
+      <div class="nav-position">
         <nav>
-         <div class="first-container">
-         <div class="contact-form" role="navigation">
-            <ul class="contact-form_ul">
-                <li><a href="index.html" style="text-decoration:none">Inicio</a></li>
-                <li><a href="micuenta.html" style="text-decoration:none">Mi cuenta</a></li>
-                <li><a href="registrate.html" style="text-decoration:none">Regístrate</a></li>
-                <li><a href="recomendaciones.html" style="text-decoration:none">Sugerencias</a></li>
-            </ul>
-            </div>  
-        </div>
-      </nav>
+           <a href="index.php" class="title" style="">Hemofilia Argentina</a>
+           <a href="index.php" style="">Inicio</a>
+           <a href="micuenta.php" style="">Mi Cuenta</a>
+           <a href="registrate.php" style="">Regístrate</a>
+           <hr>
+       </nav>
+       </div>
       <div class="background-container">
         <div class="notice-panel">
             <h1>Bienvenido al servidor de IDH y base de datos para pacientes con Hemofilia</h1>
