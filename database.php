@@ -2,7 +2,7 @@
   $server = "localhost";
   $username = "root";
   $password ="";
-  $datebase ="IDhserver";
+  $database ="IDhserver";
 
   try {
       $conn = new PDO ("mysql:host=$server;dbname=$database;",$username, $password);
