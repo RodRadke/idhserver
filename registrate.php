@@ -54,7 +54,7 @@
      <h1 class="title-page">Crear cuenta</h1>
      <span>o <a href="registrate.php"><b>Inicia Sesión</b></a></span>
             <p>Completa los siguientes datos:</p>
-          <form action="registrate.php" method="post"></form>
+          <form action="registrate.php" method="post">
             <input type="email" class="form-control" name="email" placeholder="Escribe tu email" required>
             <input type="text" class="form-control" name="Cuenta" placeholder="Nombre de usuario" maxlength="10">
             <input type="password" class="form-control" name="password" placeholder="Inserte contraseña" maxlength="10">
@@ -66,7 +66,8 @@
             Acepto la responsabilidad de mantener segura mi cuenta de <b>email</b> para así tener resguardado mi usuario .
         </label>
     <div class="panel-group">
-            <input type="submit" value="Send" namespace="Crear cuenta!">  
+            <input type="submit" value="Send" namespace="Crear cuenta!">
+        </form>   
     </div>
 </body>
 </html>
