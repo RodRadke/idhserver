@@ -55,9 +55,9 @@
      <span>o <a href="registrate.php"><b>Inicia Sesión</b></a></span>
             <p>Completa los siguientes datos:</p>
           <form action="registrate.php" method="post"></form>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Escribe tu email">
+            <input type="email" class="form-control" name="email" placeholder="Escribe tu email">
             <input type="text" class="form-control" name="Cuenta" id="cuenta" placeholder="Nombre de usuario" maxlength="10">
-            <input type="password" class="form-control" name="Password" id="password" placeholder="Inserte contraseña" maxlength="10">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Inserte contraseña" maxlength="10">
             <input type="repassword" class="form-control" name="Repassword" id="repassword" placeholder="Repita la contraseña" max="10">
         <br>
     <div class="checkbox">
