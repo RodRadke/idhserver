@@ -20,6 +20,7 @@
             <a href="index.php" style="">Hemofilia Argentina</a></li>
         </header>
         <h1>Iniciar Sesión</h1>
+        <span>o <a href="registrate.php"><b>Regístrate</b></a></span>
         <form action="micuenta.php" method="post">
             <input type="text" name="email" placeholder="Ingresar Email">
             <input type="password" name="password" placeholder="Ingresa tu contraseña">

@@ -1,3 +1,23 @@
+<?php
+  require "database.php";
+
+  $message = "";
+
+  if(!empty($_POST["email"]) && !empty($_POST["password"])) {
+    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(":email",$_POST["email"]);
+    $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
+    $stmt->bindParam(":password",$password);
+
+    if ($stmt->execute()) {
+        $message = "Se a creado su cuenta con éxito!" ;
+    } else {
+        $message = "Lo siento a ocurrido un error al crear su cuenta" ;
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,53 +46,27 @@
            <hr>
        </nav>
        </div>
-    <div class="background-container">  
+
+        <?php if(!empty($message)): ?>
+         <p><?php $message ?></p>
+        <?php endif; ?>
+
      <h1 class="title-page">Crear cuenta</h1>
-    </div>
-    <div class="second-container-content">    
-    <form role="form" class="form-horizontal" action="/registro/ok" method="post"></form>
-    <div class="panel-default">
-        <div class="panel-heading">
+     <span>o <a href="registrate.php"><b>Inicia Sesión</b></a></span>
             <p>Completa los siguientes datos:</p>
-        </div>
-    <div class="panel-body">
-    <div class="panel-group">
-        <label for="email" class="control-label">Email</label>
-        <div class="unknown">
+          <form action="registrate.php" method="post"></form>
             <input type="email" class="form-control" name="email" id="email" placeholder="Escribe tu email">
-            <p class="help-block">"Usá tu propio email, asegúrate de tener acceso al mismo <b>SIEMPRE</b> ya que no podrás cambiarlo."</p>
-        </div>
-    <div class="panel-group">
-        <label for="cuenta" class="control-label">Cuenta</label>
-        <div class="unknown">
             <input type="text" class="form-control" name="Cuenta" id="cuenta" placeholder="Nombre de usuario" maxlength="10">
-            <p class="help-block">"Entre 4 y 10 caracteres."</p>
-     </div>
-    </div>
-    <div class="panel-group">
-        <label for="password" class="control-label">Contraseña</label>
-        <div class="unknown">
             <input type="password" class="form-control" name="Password" id="password" placeholder="Inserte contraseña" maxlength="10">
-            <p class="help-block">"Entra 4 y 10 caracteres, Asegúrese de recordarla bien, en caso de olvidarla, puede solicitarla vía email."</p>
-        </div>
-    </div>
-    <div class="panel-group">
-        <label for="repassword" class="control-label">Repite la contraseña</label>
-        <div class="unknown">
             <input type="repassword" class="form-control" name="Repassword" id="repassword" placeholder="Repita la contraseña" max="10">
-        </div>
-    </div>
-    <br>
+        <br>
     <div class="checkbox">
         <label>
             <input name="t3" value="1" type="checkbox" required>
-            Acepto la responsabilidad de mantener segura mi cuenta de <b>email</b> para así tener resguardada mi cuenta.
+            Acepto la responsabilidad de mantener segura mi cuenta de <b>email</b> para así tener resguardado mi usuario .
         </label>
-        <br>
-    </div>
     <div class="panel-group">
             <input type="submit" value="Send" namespace="Crear cuenta!">  
-        </div>
     </div>
 </body>
 </html>
