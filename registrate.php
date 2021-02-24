@@ -10,10 +10,10 @@
     $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
     $stmt->bindParam(":password",$password);
 
-    if ($stmt->execute()) {
-        $message = "Se a creado su cuenta con éxito!" ;
+    if($stmt->execute()) {
+        $message = "Se a creado su cuenta con éxito!";
     } else {
-        $message = "Lo siento a ocurrido un error al crear su cuenta" ;
+        $message = "Lo siento a ocurrido un error al crear su cuenta";
     }
   }
 ?>
@@ -56,8 +56,8 @@
             <p>Completa los siguientes datos:</p>
           <form action="registrate.php" method="post">
             <input type="email" class="form-control" name="email" placeholder="Escribe tu email" required>
-            <input type="text" class="form-control" name="Cuenta" placeholder="Nombre de usuario" maxlength="10">
-            <input type="password" class="form-control" name="password" placeholder="Inserte contraseña" maxlength="10">
+            <input type="text" class="form-control" name="Cuenta" placeholder="Nombre de usuario" maxlength="10" required>
+            <input type="password" class="form-control" name="password" placeholder="Inserte contraseña" maxlength="10" required>
             <input type="repassword" class="form-control" name="Repassword" placeholder="Repita la contraseña" max="10">
         <br>
     <div class="checkbox">
