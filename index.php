@@ -1,4 +1,23 @@
-    <!DOCTYPE html>
+<?php 
+  session_start();
+  
+  require "database.php";
+  
+  if (isset($_SESSION["user_id"])) {
+    $records = $conn-> prepare("SELECT id, email, password FROM users WHERE id = :id");
+    $records-> bindParam(":id", $_SESSION["user_id"]);
+    $records-> execute();
+    $results = $records -> fetch(PDO::FETCH_ASSOC);
+
+    $user = null;
+    
+    if (count($results) > 0) {
+      $user = $results;
+    }
+  }
+?>
+
+<!DOCTYPE html>
 <html>
     <head>
     <title>Hemofilia Argentina</title>
@@ -26,6 +45,14 @@
            <hr>
        </nav>
        </div>
+
+      <?php if(!empty($user)): ?>
+        <br>Welcome <?= $user["email"] ?>
+        <br> Has ingresado!
+        <a href="logout.php">Cerrar sesión</a>
+        <?php else: ?>
+
+
       <div class="background-container">
         <div class="notice-panel">
             <h1>Bienvenido al servidor de IDH y base de datos para pacientes con Hemofilia</h1>
@@ -37,5 +64,6 @@
 <div>
 <h2>Prueba de guardado de archivo repositorio para cambio</h2>
 </div>
+<?php endif; ?>
 </body>
 </html>

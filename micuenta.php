@@ -1,3 +1,26 @@
+<?php
+
+    session_start();
+
+    require "database.php";
+
+    if (!empty($_POST["email"]) && !empty($_POST["password"])) {
+        $records = $conn->prepare("SELECT id, email, password FROM users WHERE email=:email");
+        $records->bindParam(":email", $_POST["email"]);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+
+        $message = "";
+        
+        if (count($results) > 0 && password_verify($_POST["password"], $results["password"])){
+            $_SESSION["user_id"] = $results ["id"];
+            header("Locationn: /php-login");
+        } else {
+            $message = "Lo siento, estas credenciales no coinciden";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,6 +44,11 @@
         </header>
         <h1>Iniciar Sesión</h1>
         <span>o <a href="registrate.php"><b>Regístrate</b></a></span>
+
+    <?php if (!empty($message)) : ?>
+        <p><?= $message ?></p>
+    <?php endif;?>   
+
         <form action="micuenta.php" method="post">
             <input type="text" name="email" placeholder="Ingresar Email">
             <input type="password" name="password" placeholder="Ingresa tu contraseña">

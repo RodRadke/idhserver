@@ -46,17 +46,18 @@
            <hr>
        </nav>
        </div>
+</header>
 
         <?php if(!empty($message)): ?>
-         <p><?php $message ?></p>
+         <p><?= $message ?></p>
         <?php endif; ?>
 
      <h1 class="title-page">Crear cuenta</h1>
-     <span>o <a href="registrate.php"><b>Inicia Sesión</b></a></span>
+     <span>o <a href="micuenta.php"><b>Inicia Sesión</b></a></span>
             <p>Completa los siguientes datos:</p>
           <form action="registrate.php" method="post">
             <input type="email" class="form-control" name="email" placeholder="Escribe tu email" required>
-            <input type="text" class="form-control" name="Cuenta" placeholder="Nombre de usuario" maxlength="10" required>
+            <input type="text" class="form-control" name="user" placeholder="Nombre de usuario" maxlength="10" required>
             <input type="password" class="form-control" name="password" placeholder="Inserte contraseña" maxlength="10" required>
             <input type="repassword" class="form-control" name="Repassword" placeholder="Repita la contraseña" max="10">
         <br>
