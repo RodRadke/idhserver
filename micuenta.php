@@ -14,7 +14,7 @@
         
         if (count($results) > 0 && password_verify($_POST["password"], $results["password"])){
             $_SESSION["user_id"] = $results ["id"];
-            header("Locationn: /php-login");
+            header("Location: index.php");
         } else {
             $message = "Lo siento, estas credenciales no coinciden";
         }
@@ -41,7 +41,6 @@
     <body>
         <header>
             <a href="index.php" style="">Hemofilia Argentina</a></li>
-        </header>
         <h1>Iniciar Sesión</h1>
         <span>o <a href="registrate.php"><b>Regístrate</b></a></span>
 
@@ -53,6 +52,7 @@
             <input type="text" name="email" placeholder="Ingresar Email">
             <input type="password" name="password" placeholder="Ingresa tu contraseña">
             <input type="submit" value="Send">
+        </header>
         </form>
     </body>
 </html>

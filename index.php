@@ -52,7 +52,6 @@
         <a href="logout.php">Cerrar sesión</a>
         <?php else: ?>
 
-
       <div class="background-container">
         <div class="notice-panel">
             <h1>Bienvenido al servidor de IDH y base de datos para pacientes con Hemofilia</h1>
@@ -60,9 +59,6 @@
             <h2>Un servidor dedicado a todos los pacientes con Hemofilia del país!</h2>
     </header>
   </div>
-</div>
-<div>
-<h2>Prueba de guardado de archivo repositorio para cambio</h2>
 </div>
 <?php endif; ?>
 </body>

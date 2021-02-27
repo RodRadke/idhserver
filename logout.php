@@ -5,6 +5,6 @@ session_unset();
 
 session_destroy();
 
-header("Location: /php-index");
+header("Location: /IDhserver");
 
 ?>
