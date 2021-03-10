@@ -36,30 +36,29 @@
     </head>
 <body>
     <header>
-      <div class="nav-position">
+    <div class="container">
+    <div class="container-box">  
+    <a href="index.php" class="title" style="">Hemofilia Argentina</a>
         <nav>
-           <a href="index.php" class="title" style="">Hemofilia Argentina</a>
            <a href="index.php" style="">Inicio</a>
            <a href="micuenta.php" style="">Mi Cuenta</a>
            <a href="registrate.php" style="">Regístrate</a>
-           <hr>
        </nav>
-       </div>
+    </div>
+  </div>
+<div class="contact-borders">
 
       <?php if(!empty($user)): ?>
         <br>Welcome <?= $user["email"] ?>
         <br> Has ingresado!
         <a href="logout.php">Cerrar sesión</a>
-        <?php else: ?>
 
-      <div class="background-container">
-        <div class="notice-panel">
-            <h1>Bienvenido al servidor de IDH y base de datos para pacientes con Hemofilia</h1>
-            <h2><i>En esta página usted podrá crear su IDH (Identificación como paciente de Hemofilia) donde podrá portar y descargar su identificación como paciente con su tipo de Hemofilia junto a su certificado diagnóstico y consejos en caso de emergencia y número a la Fundación de la Hemofilia. </i></h2>
-            <h2>Un servidor dedicado a todos los pacientes con Hemofilia del país!</h2>
+        <h1></h1>
+
+        <?php else: ?>
     </header>
   </div>
-</div>
+
 <?php endif; ?>
 </body>
 </html>

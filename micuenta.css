@@ -1,8 +1,9 @@
-body{
+* {
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    text-align: center;
+    background-color: #0d1117;
+    color: white;
 }
 
 input[type="text"], input[type="password"]{
@@ -13,6 +14,7 @@ input[type="text"], input[type="password"]{
     border-radius: 3px;
     border: 1px solid #eee;
     margin: 20px auto;
+    font-size: 18px;
 }
 
 input[type="submit"] {
@@ -25,21 +27,78 @@ input[type="submit"] {
     border: 0;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 input[type="submit"]:hover {
     background-color: #00b8eb;
 }
 
-header {
-    border-bottom: 2px solid #eee;
-    padding:20px;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
+input[type="text"]:hover{
+    border-block-color: blue;
+}
+
+input[type="password"]:hover{
+    border-block-color: blue;
 }
 
 header a {
     text-decoration: none;
     color: #333;
+}
+
+b {
+    color: blue;
+    font-size: 23px;
+    margin-left: 3px;
+}
+
+.container-box {
+    margin: 0px;
+    margin-top: 15px;
+    border-bottom: 2px solid rgba(167, 160, 209, 0.333);
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+nav {
+    display: inline;
+    font-size: 25px;
+    margin-left: 25cm;
+}
+
+nav a {
+    padding: 1em;
+    padding-bottom: 15px;
+    text-decoration: none;
+    margin-top: 25px;
+    color: white;
+}
+
+.contact-borders {
+    margin-top: 5em;
+    margin-left: 15em;
+    border-bottom: 1px solid rgba(167, 160, 209, 0.333);
+    border-left: 1px solid rgba(167, 160, 209, 0.333);
+    border-right: 1px solid rgba(167, 160, 209, 0.333);
+    border-top: 1px solid rgba(167, 160, 209, 0.333);
+    width: 90em;
+    height: 80em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contact-borders__data{
+    margin-top: 3em;
+}
+
+.title {
+    color: white;
 }

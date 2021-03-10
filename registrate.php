@@ -3,8 +3,8 @@
 
   $message = "";
 
-  if(!empty($_POST["email"]) && !empty($_POST["password"])) {
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+  if(!empty($_POST["email"]) && !empty($_POST["user"]) && !empty($_POST["password"])) {
+    $sql = "INSERT INTO users (email, password) VALUES (:email,:password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(":email",$_POST["email"]);
     $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
@@ -37,23 +37,27 @@
     </head>
 <body>
     <header>
-    <div class="nav-position">
+    <div class="container">
+    <div class="container-box">  
+    <a href="index.php" class="title" style="">Hemofilia Argentina</a>
         <nav>
-           <a href="index.php" class="title" style="">Hemofilia Argentina</a>
            <a href="index.php" style="">Inicio</a>
            <a href="micuenta.php" style="">Mi Cuenta</a>
            <a href="registrate.php" style="">Regístrate</a>
-           <hr>
        </nav>
-       </div>
+    </div>
+  </div>
 </header>
 
         <?php if(!empty($message)): ?>
          <p><?= $message ?></p>
         <?php endif; ?>
-
+        
+    <div class="contact-borders">
+        <div class="contact-borders__data">
      <h1 class="title-page">Crear cuenta</h1>
      <span>o <a href="micuenta.php"><b>Inicia Sesión</b></a></span>
+        </div>
             <p>Completa los siguientes datos:</p>
           <form action="registrate.php" method="post">
             <input type="email" class="form-control" name="email" placeholder="Escribe tu email" required>
@@ -67,8 +71,9 @@
             Acepto la responsabilidad de mantener segura mi cuenta de <b>email</b> para así tener resguardado mi usuario .
         </label>
     <div class="panel-group">
-            <input type="submit" value="Send" namespace="Crear cuenta!">
+            <input type="submit" value="Enviar!" namespace="Crear cuenta!">
         </form>   
     </div>
+        </div>
 </body>
 </html>
