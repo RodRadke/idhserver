@@ -42,20 +42,22 @@
       <link rel="shortcut icon" href="Iconoseimg/himg.jpg" type="image/x-icon">
       <link rel="stylesheet" href="micuenta.css">
     </head>
-    <body>
-     <header>
-     <div class="container-box">  
-    <a href="index.php" class="title" style="">Hemofilia Argentina</a>
+<body>
+<header>
+    <div class="container">
+    <div class="container-box">  
+    <a href="index.php" class="title" style=""><b>H</b>emofilia <b class="color-letter">A</b>rgentina <span>(IDHserver)</span></a>
         <nav>
            <a href="index.php" style="">Inicio</a>
            <a href="micuenta.php" style="">Mi Cuenta</a>
            <a href="registrate.php" style="">Regístrate</a>
        </nav>
     </div>
+  </div>
     <div class="contact-borders">
         <div class="contact-borders__data">
         <h1>Iniciar Sesión</h1>
-        <span>o <a href="registrate.php"><b>Regístrate</b></a></span>
+        <span>o <a href="registrate.php"><b class="register-color">Regístrate</b></a></span>
         </div>
     <?php if (!empty($message)) : ?>
         <p><?= $message ?></p>

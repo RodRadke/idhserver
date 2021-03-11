@@ -36,10 +36,10 @@
       <link rel="stylesheet" href="registrate.css">
     </head>
 <body>
-    <header>
+<header>
     <div class="container">
     <div class="container-box">  
-    <a href="index.php" class="title" style="">Hemofilia Argentina</a>
+    <a href="index.php" class="title" style=""><b>H</b>emofilia <b class="color-letter">A</b>rgentina <span>(IDHserver)</span></a>
         <nav>
            <a href="index.php" style="">Inicio</a>
            <a href="micuenta.php" style="">Mi Cuenta</a>
@@ -47,7 +47,6 @@
        </nav>
     </div>
   </div>
-</header>
 
         <?php if(!empty($message)): ?>
          <p><?= $message ?></p>
@@ -56,7 +55,7 @@
     <div class="contact-borders">
         <div class="contact-borders__data">
      <h1 class="title-page">Crear cuenta</h1>
-     <span>o <a href="micuenta.php"><b>Inicia Sesión</b></a></span>
+     <span class="move-o">o <a href="micuenta.php"><b class="index-color">Inicia Sesión</b></a></span>
         </div>
             <p>Completa los siguientes datos:</p>
           <form action="registrate.php" method="post">
@@ -75,5 +74,6 @@
         </form>   
     </div>
         </div>
+        </header>
 </body>
 </html>

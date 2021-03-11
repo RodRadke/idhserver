@@ -13,18 +13,21 @@
     height: 50px;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 a {
     display: inline;
     font-size: 26px;
     text-decoration: none;
+    background-color: #161b22;
 }
 
 nav {
     display: inline;
     font-size: 25px;
     margin-left: 25cm;
+    background-color: #161b22;
 }
 
 nav a {
@@ -32,10 +35,11 @@ nav a {
     padding-bottom: 15px;
     text-decoration: none;
     margin-top: 25px;
+    background-color: #161b22;
 }
 
 .contact-borders {
-    margin-top: 5em;
+    margin-top: 4em;
     margin-left: 15em;
     border-bottom: 1px solid rgba(167, 160, 209, 0.333);
     border-left: 1px solid rgba(167, 160, 209, 0.333);
@@ -45,8 +49,65 @@ nav a {
     height: 80em;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 .container{
     background-color:#161b22;
+    padding-top: 5px;
+}
+
+b {
+    background-color: #161b22;
+    color: red;
+}
+
+.color-letter {
+    background-color: #161b22;
+    color: lightblue;
+}
+
+.img1 {
+  height: auto;
+  width: auto;
+  max-height: 65em;
+  max-width: 65em;
+  position: relative;
+  top: 5em;
+  right: 35em;
+  display: inline-block;
+}
+
+.img2 {
+    height: auto;
+    width: auto;
+    max-width: 65em;
+    max-height: 65em;
+    position: relative;
+    top: -31.7em;
+    right: -29em;
+    width: 50vw;
+    height: 62.2vh;
+}
+
+/*
+.box {
+    width: 480px;
+    height: 250px;
+    border: 2px solid black;
+    background-color: blue;
+}
+*/
+
+.first-text, h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 15px;
+    background-color: #161b22;
 }

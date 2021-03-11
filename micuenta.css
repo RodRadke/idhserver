@@ -47,12 +47,10 @@ header a {
     color: #333;
 }
 
-b {
-    color: blue;
-    font-size: 23px;
-    margin-left: 3px;
+.container{
+    background-color:#161b22;
+    padding-top: 5px;
 }
-
 .container-box {
     margin: 0px;
     margin-top: 15px;
@@ -60,18 +58,21 @@ b {
     height: 50px;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 a {
     display: inline;
     font-size: 26px;
     text-decoration: none;
+    background-color: #161b22;
 }
 
 nav {
     display: inline;
     font-size: 25px;
     margin-left: 25cm;
+    background-color: #161b22;
 }
 
 nav a {
@@ -80,6 +81,7 @@ nav a {
     text-decoration: none;
     margin-top: 25px;
     color: white;
+    background-color: #161b22;
 }
 
 .contact-borders {
@@ -93,12 +95,38 @@ nav a {
     height: 80em;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 .contact-borders__data{
     margin-top: 3em;
+    background-color:#161b22;
 }
 
 .title {
     color: white;
+    background-color: #161b22;
+}
+
+b {
+    color: red;
+    background-color: #161b22;
+}
+
+.color-letter {
+    color: lightblue;
+}
+
+span {
+    font-size: 15px;
+    background-color: #161b22;
+}
+
+.register-color {
+    color: blue;
+    margin-left: 10px;
+}
+
+h1, form {
+    background-color:#161b22;
 }

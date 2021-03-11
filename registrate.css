@@ -17,6 +17,11 @@ header a {
     text-decoration: none;
 }
 
+.container{
+    background-color:#161b22;
+    padding-top: 5px;
+}
+
 .container-box {
     margin: 0px;
     margin-top: 15px;
@@ -24,25 +29,21 @@ header a {
     height: 50px;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 a {
     display: inline;
     font-size: 26px;
     text-decoration: none;
-    color: blue;
-}
-
-b {
-    color: blue;
-    font-size: 23px;
-    margin-left: 3px;
+    background-color: #161b22;
 }
 
 nav {
     display: inline;
     font-size: 25px;
     margin-left: 25cm;
+    background-color: #161b22;
 }
 
 nav a {
@@ -51,10 +52,36 @@ nav a {
     text-decoration: none;
     margin-top: 25px;
     color: white;
+    background-color: #161b22;
 }
 
-.title {
+b {
+    color: red;
+    background-color: #161b22;
+}
+
+.color-letter {
+    color: lightblue;
+}
+
+span {
+    font-size: 15px;
+    background-color: #161b22;
+}
+
+.register-color {
+    color: blue;
+    margin-left: 10px;
+}
+
+
+.title, .title-page {
     color: white;
+    background-color: #161b22;
+}
+
+form {
+    background-color: #161b22;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="repassword"] {
@@ -96,12 +123,28 @@ input[type="submit"]:hover {
     height: 80em;
     text-align: center;
     box-sizing: border-box;
+    background-color: #161b22;
 }
 
 .contact-borders__data{
     margin-top: 3em;
+    background-color: #161b22;
 }
 
 p {
     margin-top: 15px;
+    background-color: #161b22;
+}
+
+.index-color {
+    color: blue;
+    margin-left: 14px;
+}
+
+.move-o {
+    margin-left: 25px;
+}
+
+.checkbox, .panel-group, label {
+    background-color: #161b22;
 }

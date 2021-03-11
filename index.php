@@ -30,7 +30,6 @@
       <meta name="robots" content="noindex">
       <meta name="robots" content="nofollows">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="Normalize/normalize.css">
       <link rel="shortcut icon" href="Iconoseimg/himg.jpg" type="image/x-icon">
       <link rel="stylesheet" href="index.css">
     </head>
@@ -38,7 +37,7 @@
     <header>
     <div class="container">
     <div class="container-box">  
-    <a href="index.php" class="title" style="">Hemofilia Argentina</a>
+    <a href="index.php" class="title" style=""><b>H</b>emofilia <b class="color-letter">A</b>rgentina <span>(IDHserver)</span></a>
         <nav>
            <a href="index.php" style="">Inicio</a>
            <a href="micuenta.php" style="">Mi Cuenta</a>
@@ -46,7 +45,13 @@
        </nav>
     </div>
   </div>
+  <div class="first-text">
+  <h1>Bienvenido al servidor de ID único para pacientes con Hemofilia</h1>
+  <h2>En este sitio web, podrás registrate como paciente, acceder y tener todos tus datos como tal, el certificado diagnóstico al alcance de su mano para presentar al centro médico donde asista junto también, el resúmen de historia clínica.</h2>
+  </div>
 <div class="contact-borders">
+  <img class="img1" src="imgs/medicina.jpg" alt="">
+  <img class="img2" src="imgs/unnamed.jpg" alt="">
 
       <?php if(!empty($user)): ?>
         <br>Welcome <?= $user["email"] ?>
@@ -58,6 +63,7 @@
         <?php else: ?>
     </header>
   </div>
+  <div class="box">
 
 <?php endif; ?>
 </body>
