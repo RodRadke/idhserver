@@ -43,7 +43,7 @@
       <link rel="stylesheet" href="micuenta.css">
     </head>
 <body>
-<header>
+    <header>
     <div class="container">
     <div class="container-box">  
     <a href="index.php" class="title" style=""><b>H</b>emofilia <b class="color-letter">A</b>rgentina <span>(IDHserver)</span></a>
@@ -59,6 +59,7 @@
         <h1>Iniciar Sesión</h1>
         <span>o <a href="registrate.php"><b class="register-color">Regístrate</b></a></span>
         </div>
+        
     <?php if (!empty($message)) : ?>
         <p><?= $message ?></p>
     <?php endif;?>   

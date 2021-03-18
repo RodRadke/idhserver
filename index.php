@@ -33,7 +33,7 @@
       <link rel="shortcut icon" href="Iconoseimg/himg.jpg" type="image/x-icon">
       <link rel="stylesheet" href="index.css">
     </head>
-<body>
+ <body>
     <header>
     <div class="container">
     <div class="container-box">  

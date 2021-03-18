@@ -75,6 +75,7 @@ b {
   position: relative;
   top: 5em;
   right: 35em;
+  margin-left: 25px;
   display: inline-block;
 }
 
@@ -87,7 +88,7 @@ b {
     top: -31.7em;
     right: -29em;
     width: 50vw;
-    height: 62.2vh;
+    height: 66.3vh;
 }
 
 /*
